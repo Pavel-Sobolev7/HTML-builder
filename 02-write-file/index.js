@@ -25,3 +25,7 @@ process.on('SIGINT', () => {
     console.log('\nGoodbye !');
     rl.close();
 });
+
+process.on('exit', () => {
+    console.log('Goodbye !');
+});
